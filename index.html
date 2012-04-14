@@ -1,0 +1,24 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in site.posts limit: 3 %}
+  <div class="event">
+  <h2><a style="color: #404040; text-decoration: none;" href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="flyer">
+    <img src="{{ post.flyer }}" />
+  </p>
+</div>
+{% endfor %}
+
+<ul class="posts">
+{% for post in site.posts offset: 3 limit: 7 %}
+  <div class="post_info">
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>({{ post.date | date:"%Y-%m-%d" }})</span>
+    </li>
+  </div>
+  {% endfor %}
+</ul>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>djpressure.co.uk - {{ page.title }}</title>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap_override.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <style type="text/css">
+    .post_info li {
+      list-style-type: none;
+    }
+    </style>
+    <style type="text/css">@media print { #feedlyMiniIcon { display: none; } }</style>
+  </head>
+
+  <body data-feedly-processed="yes">
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">djpressure.co.uk</a>
+          <ul class="nav">
+            <li class="dropdown" data-dropdown="dropdown">
+              <a class="dropdown-toggle" href="/archive.html">Archive</a>
+              <ul class="dropdown-menu">
+                <li><a href="/archive2012.html">2012</a></li>
+                <li><a href="/archive2011.html">2011</a></li>
+                <li><a href="/archive2010.html">2010</a></li>
+              </ul>
+            </li>
+            <li><a href="/releases.html">Releases</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>{{ page.title }}</h1>
+        </div>
+        <div class="row">
+          <div class="span14">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>© djpressure.co.uk 2012</p>
+      </footer>
+
+    </div> <!-- /container --> 
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="/js/bootstrap-dropdown.js"></script>
+
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+  try {
+    var pageTracker = _gat._getTracker("UA-342498-1");
+    pageTracker._trackPageview();
+  } catch(err) {}
+  </script>
+</html>
